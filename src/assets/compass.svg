@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="66px" height="66px" viewBox="0 0 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>14BF01C7-DC73-4078-ABD0-BF0CFB285689</title>
+    <defs>
+        <filter x="-9.8%" y="-49.2%" width="119.7%" height="198.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.168627451   0 0 0 0 0.180392157   0 0 0 0 0.811764706  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="st-m.home-grid" transform="translate(-187.000000, -2053.000000)" stroke="#FFFFFF" stroke-width="2">
+            <g id="Group" transform="translate(10.000000, 2056.000000)" filter="url(#filter-1)">
+                <g id="compass" transform="translate(200.000000, 20.000000)">
+                    <circle id="Oval" cx="10" cy="10" r="10"></circle>
+                    <polygon id="Path" points="14.24 5.76 12.12 12.12 5.76 14.24 7.88 7.88"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
