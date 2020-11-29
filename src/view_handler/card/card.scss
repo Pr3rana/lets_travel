@@ -1,0 +1,178 @@
+$header-color: #2B2ECF;
+$body-color: #E7EDF6;
+$border-radius: 20px;
+$card-margin: 20px;
+$card-body-width: 265px;
+
+.card-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    left: 130px;
+    top: 124px;
+    z-index: 0;
+    /* Create four equal columns that sits next to each other */
+    .list-card{
+      display: flex;
+      align-items: center;
+      width: 19.0625rem;
+      margin-bottom: $card-margin;
+      background-color: #FFFFFF;
+      border-radius: $border-radius;
+      height: fit-content;
+      img {
+        vertical-align: middle;
+        background-size: 100%;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
+        margin: 10px;
+      }
+      span{
+        position: absolute;
+        left: 259px;
+        .message_square{
+          height: 18px;
+        }
+        .heart{
+          width: 22px;
+          height: 19px;
+        }
+      }
+    }
+    .card {
+        width: 19.0625rem;
+        margin-right: $card-margin;
+        margin-bottom: $card-margin;
+        background-color: #FFFFFF;
+        border-radius: $border-radius;
+        height: fit-content;
+        &:hover {
+          box-shadow: 0px 5px 20px 0px #2a2dcf80;
+          #ovel{
+            display: block;
+            cursor: pointer;
+          }
+        }
+        ul{
+          display: inline;
+          position: relative;
+          top: 20px;
+          left: 250px;
+          margin: 0;
+          padding: 0;
+          list-style-type:none;
+          li {
+            display: none;
+            position: absolute;
+            border: 2px solid #FFFFFF;
+            border-radius: 100%;
+            opacity: 0.800000011920929;
+            width: 30px;
+            height: 30px;
+            #checked{
+              background-color: #37F6B8;
+              border-radius: 100%;
+              width: 30px;
+              height: 30px;
+              .path-2 {
+                border: 3px solid #FFFFFF;
+              }
+            }
+          }
+        }
+        .card-imgae {
+            vertical-align: middle;
+            margin: 10px;
+            background-size: 100%;
+            width: 17.8125rem;
+            height: 149px;
+            border-radius: 10px;
+        }
+        .tag-wrapper {
+          margin: 0px 10px;
+          .tag {
+            background-color: #f6c937;
+            border-radius: 11.5px;
+            width: 100%;
+            padding: 2px 10px;
+            color: #ffffff;
+            font-family: OpenSans;
+            font-size: 14px;
+            line-height: 17px;
+            margin-right: 10px;
+            text-transform: uppercase;
+          }
+        }
+        .card-body{
+            padding: 20px;
+            width: $card-body-width;
+            h4{
+              margin-top: 0px;
+              margin-bottom: 10px;
+            }
+        }
+        .card-content {
+            color: #7F8A9C;
+            font-family: OpenSans;
+            font-size: 18px;
+            line-height: 22px;
+        }
+        .card-title {
+            color: $header-color;
+            font-family: Poppins;
+            font-size: 24px;
+            line-height: 29px;
+        }
+        .icon-container{
+          width: 66px;
+          display: inline;
+          position: relative;
+          left: 225px;
+          .card-icons{
+              img{
+                padding: 6px 10px 6px 6px;
+              }
+              .message_square{
+                width: 18px;
+                height: 18px;
+              }
+              .heart{
+                width: 22px;
+                height: 19px;
+              }
+          }
+      }
+    }
+    .card.selected {
+      background: linear-gradient(#2B2ECF, #652BCF);
+      .card-title {
+        color: #ffffff;
+      } 
+      .card-content {
+        color: #C5D3E8;
+      }
+    }
+  }
+   /* Responsive layout - makes a two column-layout instead of four columns */
+   @media (max-width: 800px) {
+    .card-container{
+        justify-content: center;
+    }
+    .card-container .card {
+      max-width: 50%;
+      margin-right: $card-margin;
+    }
+  }
+  
+   /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media (max-width: 600px) {
+    .card-container{
+        justify-content: center;
+        position: inherit;
+    }
+    .card-container .card {
+      max-width: 100%;
+      margin-right: 0px;
+    }
+  }
